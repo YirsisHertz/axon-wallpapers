@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #f5c47d;
+}
+
+.clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  font-weight: bolder;
+  background-color: rgba(240, 248, 255, 0.3);
+  width: 90%;
+  text-align: center;
+}
+
+.images {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+}
+
+img {
+  margin: 6rem 2rem;
+  filter: drop-shadow(0.3rem 0.3rem 2rem #0c39a97a);
+}
+
+.js {
+  animation: jsanimate 2s infinite;
+}
+
+.ts {
+  animation: tsanimate 2s infinite;
+}
+
+.vite {
+  animation: tsanimate 2s infinite;
+}
+
+.docker {
+  animation: jsanimate 2s infinite;
+}
+
+@keyframes jsanimate {
+  0% {
+    rotate: 0deg;
+    transform: scale(0.3);
+  }
+
+  50% {
+    rotate: 45deg;
+    transform: scale(0.6);
+  }
+
+  100% {
+    rotate: 0deg;
+    transform: scale(0.3);
+  }
+}
+
+@keyframes tsanimate {
+  0% {
+    rotate: 0deg;
+    transform: scale(0.3);
+  }
+
+  50% {
+    rotate: -45deg;
+    transform: scale(0.6);
+  }
+
+  100% {
+    rotate: 0deg;
+    transform: scale(0.3);
+  }
+}
